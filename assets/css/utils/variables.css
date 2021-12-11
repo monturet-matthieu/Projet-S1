@@ -25,10 +25,10 @@
 --légende: 10px;
 
     /* Font-family styles */
---font-name-tagline: 'Engravers MT';
---font-title-hv: 'Futura Hv BT';
---font-title-bk: 'Futura Bk BT';
---font-title-lt: 'Futura Lt BT';
+--font-heading-1: 'Engravers MT';
+--font-heading-2: 'Futura Hv BT';
+--font-heading-3: 'Futura Bk BT';
+--font-heading-4: 'Futura Lt BT';
 --font-body: 'Ubuntu';
 
     /* Espaces */

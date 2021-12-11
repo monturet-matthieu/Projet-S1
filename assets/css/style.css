@@ -1,5 +1,9 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('../fonts/Engravers-MT/ENGR.ttf');
+@import url('../fonts/Futura-Hv-BT/FuturaHeavyBT.ttf');
+@import url('../fonts/Futura-Bk-BT/Futura\ Book\ font.ttf');
+@import url('../fonts/Futura-Lt-BT/Futura\ Light\ font.ttf');
 
 /* Base */
 @import url('base/main.css');

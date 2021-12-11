@@ -1,0 +1,39 @@
+:root {
+    /* Color styles */
+--noir: rgba(16, 16, 16, 1);
+--citations: rgba(16, 16, 16, 0.800000011920929);
+--fond-tweets: rgba(108, 108, 108, 1);
+--fond-de-page: rgba(248, 248, 255, 1);
+--blanc: rgba(255, 255, 255, 1);
+--rouge: rgba(188, 20, 20, 1);
+--bleu-logo: rgba(209, 238, 240, 1);
+--bleu-liens-externes: rgba(8, 4, 194, 1);
+--bleu-header-footer: rgba(22, 0, 69, 1);
+--violet-lexique-frise: rgba(100, 0, 178, 1);
+
+    /* Text-size styles */
+--heading-1: 20px;
+--heading-2: 18px;
+--heading-3: 15px;
+--heading-4: 14px;
+--body: 13px;
+--title: 14px;
+--chapô: 14px;
+--highlighting: 13px;
+--citations: 12px;
+--frise: 11px;
+--légende: 10px;
+
+    /* Font-family styles */
+--font-name-tagline: 'Engravers MT';
+--font-title-hv: 'Futura Hv BT';
+--font-title-bk: 'Futura Bk BT';
+--font-title-lt: 'Futura Lt BT';
+--font-body: 'Ubuntu';
+
+    /* Espaces */
+--space1x: 8px;
+--space2x: 16px;
+--space3x: 24px;
+--space4x: 48px;
+}

@@ -1,7 +1,7 @@
 :root {
     /* Color styles */
 --noir: rgba(16, 16, 16, 1);
---citations: rgba(16, 16, 16, 0.800000011920929);
+--citation: rgba(16, 16, 16, 0.800000011920929);
 --fond-tweets: rgba(108, 108, 108, 1);
 --fond-de-page: rgba(248, 248, 255, 1);
 --blanc: rgba(255, 255, 255, 1);
@@ -17,12 +17,10 @@
 --heading-3: 15px;
 --heading-4: 14px;
 --body: 13px;
---title: 14px;
---chapô: 14px;
---highlighting: 13px;
+--title-chapo: 14px;
 --citations: 12px;
 --frise: 11px;
---légende: 10px;
+--legende: 10px;
 
     /* Font-family styles */
 --font-heading-1: 'Engravers MT';

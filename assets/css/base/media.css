@@ -8,6 +8,6 @@ img {
   }
   
   figcaption {
-    font-size: var(--text-xs);
-    color: var(--gray-600);
+    font-size: var(--body);
+    color: var(--blanc);
   }

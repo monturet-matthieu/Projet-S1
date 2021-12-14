@@ -5,16 +5,16 @@
 @import url('../fonts/Futura-Bk-BT/Futura\ Book\ font.ttf');
 @import url('../fonts/Futura-Lt-BT/Futura\ Light\ font.ttf');
 
-/* Base */
-@import url('base/main.css');
-@import url('base/media.css');
-@import url('base/icons.css');
+/* Vendors */
+@import url('vendors/normalize.css');
 
 /* Variables */
 @import url('utils/variables.css');
 
-/* Vendors */
-@import url('vendors/normalize.css');
+/* Base */
+@import url('base/main.css');
+@import url('base/media.css');
+@import url('base/icons.css');
 
 /* Layout */
 @import url('layout/header.css');

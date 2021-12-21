@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,108 +7,123 @@
     <meta name="description" content="Site Femin'In">
 
     <title>Femin'In</title>
-
+    <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
+  
   <body>
-    <header>
-      <button>
-        <span></span>
-      </button>
+    <!-- En-tête -->
+    <header class="header">
+      <div class="header__start">
+
+        <button class="menu__button"
+        @pointerdown="menuIsOpen = !menuIsOpen"
+        :class="menuIsOpen && 'menu__open'">
+          <span class="menu-button__bar"></span>
+        </button>
+      </div>
 
       <h1><strong>Femin'In</strong></h1>
 
-      <a href="index.html">
-        <img src="assets/icons/logo.svg" alt="Logo du site">
-      </a>
-
-      <nav>
-         <button>
-        <span></span>
-        </button>
-
-        <h1><strong>Femin'In</strong></h1>
-
-        <a href="indexEN.html">FR</a>
-
-        <a href="index.html">
+      <div class="header__end">
+        <a href="index.html" class="header__logo">
           <img src="assets/icons/logo.svg" alt="Logo du site">
         </a>
+
+        <nav class="menu" :class="menuIsOpen && 'menu__open'">
+          <div class="header">
+            <div class="header__start">
+              <button class="menu__button">
+                <span class="menu-button__bar"></span>
+              </button>
+            </div>
+
+              <h1><strong>Femin'In</strong></h1>
+
+            <div class="header__end">
+              <a class="header__translate" href="indexEN.html">FR</a>
+
+              <a class="header__logo" href="index.html">
+                <img src="assets/icons/logo.svg" alt="Logo du site">
+              </a>
+            </div>
+          </div>
         
         
-        <ul>
-          <li>
-            <a href="emma-watson.html">Emma Watson, une icône du 21e siècle</a>
-          </li>
-          <li>
-            <a href="histoire-du-feminisme.html">Le féminisme en France, de ses origines à nos jours</a>
-          </li>
-          <li>
-            <a href="deuxième-sexe.html"><em>Le Deuxième Sexe</em>, une oeuvre atemporelle</a>
-          </li>
-          <li>
-            <a href="galerie.html">Galerie de figures féministes</a>
-          </li>
-          <li>
-            <a href="contact.html">À propos / Nous contacter</a>
-          </li>
-          <li>
-            <a href="autres-projets.html">Autres projets</a>
-          </li>
-          <li>
-            <a href="lexique.html">Lexique</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/matthieumonturet/">
-              <img src="assets/icons/icon_instagram.svg" alt="Icône redirigeant vers le compte Instagram de Matthieu Monturet">
-            </a>
-            <a href="https://twitter.com/MatthieuMontur1">
-              <img src="assets/icons/icon_twitter.svg" alt="Icône redirigeant vers le compte Twitter de Matthieu Monturet">
-            </a>
-            <a href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
-              <img src="assets/icons/icon_linkedin.svg" alt="Icône redirigeant vers le compte LinkedIn de Matthieu Monturet">
-            </a>
-          </li>
-            <section>
-              <a href="contact.html">Contact</a>  
-            </section>
+          <ul>
+            <li class="menu__item">
+              <a class="menu__link" href="emma-watson.html">Emma Watson, une icône du 21e siècle</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="histoire-du-feminisme.html">Le féminisme en France, de ses origines à nos jours</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="deuxième-sexe.html"><em>Le Deuxième Sexe</em>, une oeuvre atemporelle</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="galerie.html">Galerie de figures féministes</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html">À propos / Nous contacter</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projets.html">Autres projets</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="lexique.html">Lexique</a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.instagram.com/matthieumonturet/">
+                <img class="menu__SN" src="assets/icons/icon_instagram.svg" alt="Icône redirigeant vers le compte Instagram de Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://twitter.com/MatthieuMontur1">
+                <img class="menu__SN" src="assets/icons/icon_twitter.svg" alt="Icône redirigeant vers le compte Twitter de Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
+                <img class="menu__SN" src="assets/icons/icon_linkedin.svg" alt="Icône redirigeant vers le compte LinkedIn de Matthieu Monturet">
+              </a>
+            </li>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+                <a href="contact.html">Contact</a>  
             
-            <section>
-              <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique du département <a href="http://mmimontbeliard.com">MMI de Montbéliard</a> de l’IUT Belfort-Montbéliard (France).</p>
-            </section>
+                <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique du département <a href="http://mmimontbeliard.com">MMI de Montbéliard</a> de l’IUT Belfort-Montbéliard (France).</p>
       
-            <section>
-              <h1>SE MOBILISER POUR LES FEMMES, C'EST SAUVER L'HOMME</h1>
-            </section>
+                <h1>SE MOBILISER POUR LES FEMMES, C'EST SAUVER L'HOMME</h1>
             
-            <section>
-              <a href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
-            </section>
+                <a href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
       
-            <section>
-              <p>Matthieu Monturet B2</p>
-        </ul>
-      </nav>
+                <p>Matthieu Monturet B2</p>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
 
-      <img src="assets/img/Image-page-d_accueil.webp" alt="Image de la page d'accueil">
+      <img class="home__page--img" src="assets/img/Image-page-d_accueil.webp" alt="Image de la page d'accueil">
 
-      <img src="assets/icons/line.svg" alt="Motif de la page d'accueil">
+      <img class="motif motif1" src="assets/icons/line.svg" alt="Motif de la page d'accueil">
       
-        <button>
+        <button class="video">
           <p>VIDEO</p>
         </button>
       
           <p>Description de la vidéo</p>
       
-      <img src="assets/icons/line.svg" alt="Motif de la page d'accueil">
+      <img class="motif" src="assets/icons/line.svg" alt="Motif de la page d'accueil">
 
       <p>Bonjour et bienvenue sur Femin’In ! N’hésitez pas à visiter les projets de mes camarades, disponibles dans la section « Autres projets » ! Un commentaire à faire sur le site ? Rendez-vous dans la section « À propos / Nous contacter ». Vous y trouverez un formulaire de contact afin d’avoir vos retours et impressions ! Bonne visite !</p>
 
-      <img src="assets/icons/line.svg" alt="Motif de la page d'accueil">
+      <img class="motif" src="assets/icons/line.svg" alt="Motif de la page d'accueil">
 
       <a href="emma-watson.html">
         <img src="assets/img/tweets/Image-tweet-Emma-Watson.webp" alt="Tweet redirigeant vers l'article Emma Watson, une icône du 21e siècle">        
@@ -140,7 +155,7 @@
         </p>
       </a>
 
-      <img src="assets/icons/line.svg" alt="Motif de la page d'accueil">
+      <img class="motif" src="assets/icons/line.svg" alt="Motif de la page d'accueil">
     </main>
     
     <footer>

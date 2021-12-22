@@ -4,12 +4,6 @@
   box-sizing: border-box
 }
 
-body {
-    font-family: var(--font-body);
-    font-size: var(--body);
-    line-height: 1.6
-}
-
 h1 {
     color: var(--blanc);
     font-family: var(--font-heading-1);
@@ -45,7 +39,9 @@ body, .citation, .chapo, .title, .legende, .frise {
 
 body {
     color: var(--noir);
-    font-size: var(--body)
+    background-color: var(--fond-de-page);
+    font-size: var(--body);
+    line-height: 1.6
 }
 
 .citation {
@@ -75,6 +71,15 @@ body {
     font-size: var(--frise)
 }
 
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
 .container {
   padding-left: var(--space3x);
   padding-right: var(--space3x)
@@ -84,4 +89,9 @@ body {
     list-style: none;
     margin: 0;
     padding: 0
+}
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
 }

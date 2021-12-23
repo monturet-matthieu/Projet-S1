@@ -22,4 +22,6 @@
 
 /* Component */
 @import url('component/menu.css');
-
+@import url('component/button.css');
+@import url('component/motif.css');
+@import url('component/intro.css');

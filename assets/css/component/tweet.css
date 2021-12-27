@@ -1,0 +1,18 @@
+.tweet {
+    display: flex;
+    margin-left: var(--marge);
+    margin-right: var(--marge);
+    text-align: center;
+    background-color: var(--blanc);
+    margin-bottom: var(--space5x);
+}
+
+.tweet__link {
+    color: var(--noir);
+    text-decoration: none;
+}
+
+.tweet__title {
+    font-size: var(--title-chapo);
+    font-weight: bold;
+}

@@ -3,11 +3,15 @@ img {
     height: auto;
   }
   
-  figure {
-    margin: 0;
-  }
+figure {
+  margin: 0;
+}
   
-  figcaption {
-    font-size: var(--body);
-    color: var(--blanc);
-  }
+figcaption {
+  font-size: var(--body);
+  color: var(--blanc);
+}
+
+.home__page--img {
+  margin-top: 75px;
+}

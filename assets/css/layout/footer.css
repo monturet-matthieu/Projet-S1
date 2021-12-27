@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--bleu-header-footer);
+    text-align: center;
+    margin-top: var(--marge);
+    padding-bottom: 1.25rem;
+    padding-top: var(--space2x)
+}
+
+.footer__link {
+    color: var(--rouge);
+    text-decoration: none;
+}
+
+.footer__title {
+    font-size: var(--body);
+}
+
+.footer__text {
+    color: var(--blanc);
+    text-decoration: none;
+}

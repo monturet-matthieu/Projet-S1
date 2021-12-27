@@ -1,0 +1,5 @@
+.intro {
+    font-size: var(--title-chapo);
+    margin-left: var(--marge);
+    margin-right: var(--marge);
+}

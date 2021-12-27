@@ -1,0 +1,14 @@
+.motif {
+    display: block;
+    margin-left: 1.4rem;
+}
+    
+.motif1, .motif4 {
+    margin-top: var(--marge);
+    margin-bottom: var(--marge);
+}
+
+.motif2, .motif3 {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}

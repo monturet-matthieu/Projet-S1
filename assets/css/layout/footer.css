@@ -2,8 +2,8 @@
     background-color: var(--bleu-header-footer);
     text-align: center;
     margin-top: var(--marge);
-    padding-bottom: 1.25rem;
-    padding-top: var(--space2x)
+    padding-bottom: var(--space3x);
+    padding-top: var(--space4x)
 }
 
 .footer__link {

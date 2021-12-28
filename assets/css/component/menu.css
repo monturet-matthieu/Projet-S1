@@ -21,7 +21,8 @@
 
 .menu__item {
   margin-left: -2.5rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
   text-align: center
 }
 
@@ -30,8 +31,7 @@
 }
 
 .menu__item:last-child {
-  content: '';
-  background-color: var(--bleu-header-footer);
+  margin-bottom: -1.4rem;
 }
 
 .menu__link {
@@ -52,22 +52,26 @@
 
 .menu__SN:first-child {
   margin-left: var(--space5x);
-  margin-bottom: -0.5rem;
+  margin-bottom: -0.3rem;
 }
 
 .menu__footer {
   color: var(--blanc);
-  font-size: var(--menu-frise);
+  background-color: var(--bleu-header-footer);
+  font-size: var(--frise);
   text-align: center;
-  margin-top: 0.3rem;
-  margin-left: -0.5rem;
-  margin-right: 1.5rem;
+  padding-top: var(--space2x);
+  padding-bottom: var(--space3x);
+}
+
+.menu__title, .menu__button--footer {
+  font-size: var(--body);
 }
 
 .menu__title {
   font-size: var(--body);
-  margin-left: -1.5rem;
-  margin-right: -1.2rem;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .menu__link--footer {

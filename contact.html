@@ -1,22 +1,120 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Femin'In - Contact</title>
-</head>
-<body>
-    <header>
-        <a href="menu.html">
-          <img src="assets/icons/menu.svg" alt="Icône du menu hamburger">
-        </a>
+    <meta name="description" content="Site Femin'In">
+
+    <title>Femin'In</title>
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  </head>
   
-        <h1><strong>Femin'In</strong></h1>
-  
-        <a href="index.html">
+  <body>
+    <!-- En-tête -->
+    <header class="header">
+      <div class="header__start">
+
+        <button class="menu__button"
+        @pointerdown="menuIsOpen = !menuIsOpen"
+        :class="menuIsOpen && 'menu__open'">
+          <span class="menu-button__bar"></span>
+        </button>
+      </div>
+
+      <h1><strong>Femin'In</strong></h1>
+
+      <div class="header__end">
+        <a href="index.html" class="header__logo">
           <img src="assets/icons/logo.svg" alt="Logo du site">
         </a>
+
+        <nav class="menu" :class="menuIsOpen && 'menu__open'">
+          <div class="header">
+            <div class="header__start">
+              <button class="menu__button">
+                <span class="menu-button__bar"></span>
+              </button>
+            </div>
+
+              <h1><strong>Femin'In</strong></h1>
+
+            <div class="header__end">
+              <a class="header__translate" href="indexEN.html">FR</a>
+
+              <a class="header__logo" href="index.html">
+                <img src="assets/icons/logo.svg" alt="Logo du site">
+              </a>
+            </div>
+          </div>
+        
+        
+          <ul>
+            <li class="menu__item">
+              <a class="menu__link" href="emma-watson.html">Emma Watson, une icône du 21e siècle</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="histoire-du-feminisme.html">Le féminisme en France, de ses origines à nos jours</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="deuxième-sexe.html"><em>Le Deuxième Sexe</em>, une oeuvre atemporelle</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="galerie.html">Galerie de figures féministes</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html">À propos / Nous contacter</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projets.html">Autres projets</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="lexique.html">Lexique</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.instagram.com/matthieumonturet/">
+                <img class="menu__SN" src="assets/icons/icon_instagram.svg" alt="Icône redirigeant vers le compte Instagram de Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://twitter.com/MatthieuMontur1">
+                <img class="menu__SN" src="assets/icons/icon_twitter.svg" alt="Icône redirigeant vers le compte Twitter de Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
+                <img class="menu__SN" src="assets/icons/icon_linkedin.svg" alt="Icône redirigeant vers le compte LinkedIn de Matthieu Monturet">
+              </a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Ligne séparant les titres des onglets du menu">
+            </li>
+          </ul>
+            
+          <div class="menu__footer">
+            <a class="menu__link--footer menu__button--footer" href="contact.html">Contact</a>  
+            
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique du département <a class="menu__link--footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a> de l’IUT Belfort-Montbéliard (France).</p>
+      
+            <h1 class="menu__title">SE MOBILISER POUR LES FEMMES, C'EST SAUVER L'HOMME</h1>
+            
+            <a class="menu__link--footer" href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
+      
+            <p>Matthieu Monturet B2</p>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -72,18 +170,16 @@
         </form>
     </main>
 
-    <footer>
-        <br>
-        <br>
-          <a href="contact.html">Contact</a>  
+    <footer class="footer">
+        <a class="footer__link" href="contact.html">Contact</a>  
 
-          <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique du département <a href="http://mmimontbeliard.com">MMI de Montbéliard</a> de l’IUT Belfort-Montbéliard (France).</p>
-  
-          <h1>SE MOBILISER POUR LES FEMMES, C'EST SAUVER L'HOMME</h1>
-        
-          <a href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
-  
-          <p>Matthieu Monturet B2</p>
+        <p class="footer__text">Ce site est un projet réalisé dans le cadre d’un exercice pédagogique du département <a class="footer__link" href="http://mmimontbeliard.com">MMI de Montbéliard</a> de l’IUT Belfort-Montbéliard (France).</p>
+
+        <h1 class="footer__title">SE MOBILISER POUR LES FEMMES, C'EST SAUVER L'HOMME</h1>
+      
+        <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
+
+        <p class="footer__text">Matthieu Monturet B2</p>
     </footer>
 </body>
 </html>

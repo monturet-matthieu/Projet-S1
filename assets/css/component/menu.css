@@ -21,13 +21,13 @@
 
 .menu__item {
   margin-left: -2.5rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   margin-bottom: 0;
   text-align: center
 }
 
 .menu__item:first-child {
-  margin-top: 3.2rem;
+  margin-top: 7rem;
 }
 
 .menu__item:last-child {
@@ -61,7 +61,7 @@
   font-size: var(--frise);
   text-align: center;
   padding-top: var(--space2x);
-  padding-bottom: var(--space3x);
+  padding-bottom: var(--space2x);
 }
 
 .menu__title, .menu__button--footer {

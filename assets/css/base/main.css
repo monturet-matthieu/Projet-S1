@@ -63,7 +63,9 @@ body {
 
 .legende {
     color: var(--noir);
-    font-size: var(--legende)
+    font-size: var(--legende);
+    display: block;
+    text-align: center;
 }
 
 .frise {

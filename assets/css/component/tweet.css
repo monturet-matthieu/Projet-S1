@@ -16,3 +16,41 @@
     font-size: var(--title-chapo);
     font-weight: bold;
 }
+
+.tweet__legende {
+    margin-bottom: var(--space2x);
+}
+
+.tweet__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.tweet__img--first, .tweet__img--second, .tweet__img--third, .tweet__img--fourth {
+    position: relative;   
+}
+
+.tweet__img--first {
+    max-width: 25%;
+    margin-left: -8.2rem;
+    height: 117px;
+}
+
+.tweet__img--second {
+    max-width: 25%;
+    margin-right: -0.2rem;
+    height: 117px;
+}
+
+.tweet__img--third {
+    max-width: 57%;
+    margin-right: -8.2rem;
+    margin-left: -9.3rem;
+    position: absolute;
+}
+
+.tweet__img--fourth {
+    max-width: 50%;
+    margin-right: -8.2rem;
+    z-index: 1;
+}

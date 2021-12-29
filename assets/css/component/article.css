@@ -1,3 +1,14 @@
 .article {
-    margin-top: 7rem
+    margin-top: 7rem;
+    margin-left: var(--space3x);
+    margin-right: var(--space3x);
 }
+
+.article h2 {
+    text-align: center;
+}
+
+.article__body {
+    margin-bottom: var(--space4x);
+}
+

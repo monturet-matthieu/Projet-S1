@@ -54,7 +54,8 @@ body {
 }
 
 .chapo {
-    color: var(--noir)
+    color: var(--noir);
+    margin-top: var(--space4x)
 }
 
 .title {
@@ -66,6 +67,7 @@ body {
     font-size: var(--legende);
     display: block;
     text-align: center;
+    margin-bottom: var(--space4x);
 }
 
 .frise {

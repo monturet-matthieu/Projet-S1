@@ -12,3 +12,12 @@
     margin-bottom: var(--space4x);
 }
 
+.link__lexique {
+    color: var(--violet-lexique-frise);
+    text-decoration: none;
+}
+
+.article__img {
+    position: relative;
+    margin-top: var(--space4x);
+}

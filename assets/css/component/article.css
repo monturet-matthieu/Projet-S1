@@ -21,3 +21,34 @@
     position: relative;
     margin-top: var(--space4x);
 }
+
+.hdf {
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+.list {
+    margin-left: -20px;
+    margin-right: 20px;
+    margin-bottom: var(--space6x);
+}
+
+.list__img {
+    margin-top: var(--space1x);
+}
+
+.list__img--mlf {
+    width: 120%;
+}
+
+.frise__text {
+    position: relative;
+    margin-top: -1430px;
+    margin-left: var(--space6x);
+    line-height: 1.1;
+    margin-right: -10px;
+}
+
+.date {
+    color: var(--rouge);
+}

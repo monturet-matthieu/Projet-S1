@@ -1,3 +1,32 @@
+/* .button {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: var(--letter-spacing);
+    font-weight: bold;
+    padding: var(--space2x) var(--space3x);
+    border: 1px solid var(--rouge);
+    color: var(--noir);
+    font-size: var(--font-body);
+    display: inline-flex;
+    place-items: center;
+    gap: var(--space2x);
+    transition: all .3s ease-in-out;
+} */
+
+.intro {
+    font-size: var(--title-chapo);
+    margin-left: var(--marge);
+    margin-right: var(--marge);
+}
+
+.video {
+    display: block;
+    text-align: center;
+    background-color: var(--blanc);
+    margin-left: var(--marge);
+    margin-right: var(--marge);
+}
+
 .tweet {
     display: flex;
     margin-left: var(--marge);
@@ -52,4 +81,19 @@
     max-width: 50%;
     margin-right: -8.2rem;
     z-index: 1;
+}
+
+.motif {
+    display: block;
+    margin-left: 1.4rem;
+}
+    
+.motif1, .motif4 {
+    margin-top: var(--marge);
+    margin-bottom: var(--marge);
+}
+
+.motif2, .motif3 {
+    margin-top: 17px;
+    margin-bottom: 17px;
 }

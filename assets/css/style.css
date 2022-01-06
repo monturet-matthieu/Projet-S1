@@ -22,9 +22,5 @@
 
 /* Component */
 @import url('component/menu.css');
-@import url('component/button.css');
-@import url('component/motif.css');
-@import url('component/intro.css');
-@import url('component/tweet.css');
-@import url('component/video.css');
+@import url('component/hero.css');
 @import url('component/article.css');

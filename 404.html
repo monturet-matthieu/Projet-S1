@@ -2,10 +2,19 @@
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <title>404 - Page Non trouvée</title>
 <h1>Page Non trouvée</h1>
-<p> Votre requête n'a pu aboutir à cause d'un contenu manquant ou d'une erreur de saisie de votre part. 
-    <br> 
-    Vérifiez les informations que vous avez saisi, ou rendez-vous sur l'une des pages du site.
+<p> Votre requête n'a pu aboutir à cause d'un contenu manquant ou d'une erreur de saisie de votre part. Vérifiez que les informations que vous avez saisi sont correctes.
+    <br>
+    <br>
+    Vous pouvez rechercher un mot-clé dans la barre de recherche ci-dessous ou bien vous rendre directement sur une des pages du site.
 </p>
+
+<form action="https://duckduckgo.com/" method="GET" 
+    x-data="{ q:'', }" 
+    x-on:submit="q = q + ' site:f-for-feminism.heinis-corp.fr'">
+    <label for="q">Texte à chercher :</label>
+    <input type="text" id="q" name="q" x-model="q">
+    <button type="submit">Rechercher</button>
+</form>
 
 <h2>Pour nous contacter</h2>
 
@@ -14,24 +23,24 @@
 </a>
 
 <h2>Les pages du site</h2>
-<a href="index.html">
+<a class="link" href="index.html">
     <p>Femin'In</p>
 </a>
-<a href="emma-watson.html">
+<a class="link" href="emma-watson.html">
     <p>Emma Watson, une icône du 21e siècle</p>
 </a>
-<a href="histoire-du-feminisme.html">
+<a class="link" href="histoire-du-feminisme.html">
     <p>Le féminisme en France, de ses origines à nos jours</p>
 </a>
-<a href="deuxième-sexe.html">
+<a class="link" href="deuxième-sexe.html">
     <p><cite>Le Deuxième Sexe</cite>, une oeuvre atemporelle</p>
 </a>
-<a href="galerie.html">
+<a class="link" href="galerie.html">
     <p>Galerie de figures féministes</p>
 </a>
-<a href="autres-projets.html">
+<a class="link" href="autres-projets.html">
     <p>Autres projets</p>
 </a>
-<a href="lexique.html">
+<a class="link" href="lexique.html">
     <p>Lexique</p>
 </a>

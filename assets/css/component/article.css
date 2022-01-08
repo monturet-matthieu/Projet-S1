@@ -12,9 +12,18 @@
     margin-bottom: var(--space4x);
 }
 
+.article__text {
+    margin-left: var(--space2x);
+    margin-right: var(--space2x);
+}
+
 .link__lexique {
     color: var(--violet-lexique-frise);
     text-decoration: none;
+}
+
+.link__externe {
+    color: var(--bleu-liens-externes);
 }
 
 .article__img {
@@ -65,4 +74,22 @@
 
 .galerie__img {
     margin-left: var(--space4x);
+}
+
+.required {
+    color: var(--rouge);
+}
+
+.contact, .contact__title {
+    margin-left: var(--space2x);
+}
+
+.contact {
+    width: 90%;
+}
+
+
+.contact__button {
+    margin-top: var(--space4x);
+    margin-left: 195px;
 }

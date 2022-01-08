@@ -52,3 +52,17 @@
 .date {
     color: var(--rouge);
 }
+
+.galerie {
+    margin-top: var(--space5x);
+    margin-bottom: var(--space6x);
+    margin-left: var(--marge); margin-right: var(--marge);
+}
+
+.galerie h3 {
+    text-align: center;
+}
+
+.galerie__img {
+    margin-left: var(--space4x);
+}

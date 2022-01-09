@@ -93,3 +93,19 @@
     margin-top: var(--space4x);
     margin-left: 195px;
 }
+
+.autres__chapo {
+    font-size: var(--title-chapo);
+    margin-left: var(--space3x); margin-right: var(--space3x);
+}
+
+.autres__liens {
+    margin-left: var(--space3x); margin-right: var(--space3x);
+    margin-bottom: var(--space5x);
+}
+
+.autres__a {
+    margin-left: 53px;
+    margin-right: 53px;
+    margin-bottom: -25px;
+}

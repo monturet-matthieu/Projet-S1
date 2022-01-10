@@ -27,6 +27,20 @@
     margin-right: var(--marge);
 }
 
+video {
+    max-width: 100%;
+}
+
+.video__desc {
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: var(--title-chapo);
+    margin-top: -10px;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .tweet {
     display: flex;
     margin-left: var(--marge);

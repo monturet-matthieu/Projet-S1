@@ -2,46 +2,90 @@
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <link rel = "icon" type = "image/png" href = "assets/icons/logo.svg">
 <title>404 - Page Non trouvée</title>
-<h1>Page Non trouvée</h1>
-<p> Votre requête n'a pu aboutir à cause d'un contenu manquant ou d'une erreur de saisie de votre part. Vérifiez que les informations que vous avez saisi sont correctes.
+<h1>Page Non trouvée / Page Not Found</h1>
+<p> [FR] Votre requête n'a pu aboutir à cause d'un contenu manquant ou d'une erreur de saisie de votre part. Vérifiez que les informations que vous avez saisi sont correctes.
     <br>
     <br>
     Vous pouvez rechercher un mot-clé dans la barre de recherche ci-dessous ou bien vous rendre directement sur une des pages du site.
 </p>
-
+<p>
+    [EN] Your request could not be completed due to missing content or an input error on your part. Please check that the information you have entered is correct.
+    <br>
+    <br>
+    You can search for a keyword in the search bar below or go directly to one of the pages of the website.
+</p>
 <form action="https://duckduckgo.com/" method="GET" 
     x-data="{ q:'', }" 
     x-on:submit="q = q + ' site:f-for-feminism.heinis-corp.fr'">
-    <label for="q">Texte à chercher :</label>
+    <label for="q"> Texte à chercher / Text to search:</label>
     <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
+    <button type="submit">Rechercher / Search</button>
 </form>
 
-<h2>Pour nous contacter</h2>
+<h2>To contact us</h2>
 
 <a href="contact.html">
-    <p>À propos / Nous contacter</p>
+    <p> [FR] À propos / Nous contacter</p>
 </a>
 
-<h2>Les pages du site</h2>
-<a class="link" href="index.html">
+<a href="contactEN.html">
+    <p> [EN] About us / Contact us</p>
+</a>
+
+<h2>[FR] Les pages du site</h2>
+<a href="index.html">
     <p>Femin'In</p>
 </a>
-<a class="link" href="emma-watson.html">
+
+<a href="emma-watson.html">
     <p>Emma Watson, une icône du 21e siècle</p>
 </a>
-<a class="link" href="histoire-du-feminisme.html">
+
+<a href="histoire-du-feminisme.html">
     <p>Le féminisme en France, de ses origines à nos jours</p>
 </a>
-<a class="link" href="deuxième-sexe.html">
+
+<a href="deuxième-sexe.html">
     <p><cite>Le Deuxième Sexe</cite>, une oeuvre atemporelle</p>
 </a>
-<a class="link" href="galerie.html">
+
+<a href="galerie.html">
     <p>Galerie de figures féministes</p>
 </a>
-<a class="link" href="autres-projets.html">
+
+<a href="autres-projets.html">
     <p>Autres projets</p>
 </a>
-<a class="link" href="lexique.html">
+
+<a href="lexique.html">
     <p>Lexique</p>
+</a>
+
+<h2>Pages of the website</h2>
+<a href="indexEN.html">
+    <p>Femin'In</p>
+</a>
+
+<a href="emma-watsonEN.html">
+    <p>Emma Watson, an icon of the 21st century</p>
+</a>
+
+<a href="histoire-du-feminismeEN.html">
+    <p>Feminism in France, from its origins to nowadays</p>
+</a>
+
+<a href="deuxième-sexeEN.html">
+    <p><cite>The Second Sex</cite>, a timeless piece</p>
+</a>
+
+<a href="galerieEN.html">
+    <p>Gallery of feminists figures</p>
+</a>
+
+<a href="autres-projetsEN.html">
+    <p>Other projects</p>
+</a>
+
+<a href="lexiqueEN.html">
+    <p>Lexicon</p>
 </a>

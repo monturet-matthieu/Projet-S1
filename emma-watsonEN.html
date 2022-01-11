@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Femin'In">
+
+    <title>Femin'In</title>
+    <link rel = "icon" type = "image/png" href = "assets/icons/logo.svg">
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- En-tête -->
+    <header class="header">
+      <div class="header__start">
+        <button class="menu__button"
+        @pointerdown="menuIsOpen = !menuIsOpen"
+        :class="menuIsOpen && 'menu__open'">
+          <span class="menu-button__bar"></span>
+        </button>
+      </div>
+
+      <h1><strong>Femin'In</strong></h1>
+
+      <div class="header__end">
+        <a href="index.html" class="header__logo">
+          <img src="assets/icons/logo.svg" alt="Website logo">
+        </a>
+
+        <nav class="menu" :class="menuIsOpen && 'menu__open'">
+          <div class="header">
+            <div class="header__start">
+              <button class="menu__button">
+                <span class="menu-button__bar"></span>
+              </button>
+            </div>
+
+              <h1><strong>Femin'In</strong></h1>
+
+            <div class="header__end">
+              <a class="header__translate" href="emma-watson.html">EN</a>
+
+              <a class="header__logo" href="indexEN.html">
+                <img src="assets/icons/logo.svg" alt="Website logo">
+              </a>
+            </div>
+          </div>
+        
+        
+          <ul>
+            <li class="menu__item">
+              <a class="menu__link" href="emma-watsonEN.html">Emma Watson, an icon of the 21st century</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="histoire-du-feminismeEN.html">Feminism, from its origins to nowadays</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="deuxième-sexeEN.html"><em>The Second Sex</em>, a timeless piece</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="galerieEN.html">Gallery of feminist figures</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="contactEN.html">About us / Contact us</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projetsEN.html">Other projects</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="lexiqueEN.html">Lexicon</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.instagram.com/matthieumonturet/">
+                <img class="menu__SN" src="assets/icons/icon_instagram.svg" alt="Icon redirecting to the Instagram account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://twitter.com/MatthieuMontur1">
+                <img class="menu__SN" src="assets/icons/icon_twitter.svg" alt="Icon redirecting to the Twitter account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
+                <img class="menu__SN" src="assets/icons/icon_linkedin.svg" alt="Icon redirecting to the LinkedIn account of Matthieu Monturet">
+              </a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+          </ul>
+            
+          <div class="menu__footer">
+            <a class="menu__link--footer menu__button--footer" href="contact.html">Contact</a>  
+            
+            <p>This site is a project carried out as part of an educational exercise of the <a class="menu__link--footer" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT 	Belfort-Montbéliard in France.</p>
+      
+            <h1 class="menu__title">Mobilizing for women is saving Men</h1>
+            
+            <a class="menu__link--footer" href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
+      
+            <p>Matthieu Monturet B2</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+      
+    <main class="article">
+      <h2>Emma Watson : an icon of the 21st century</h2>
+      <p class="chapo">Born on April 15, 1990 in Paris, Emma Watson is best known for her acting career (Hermione Granger in the Harry Potter saga). However, she has done other prestigious jobs, such as model or <a class="link__lexique" href="lexiqueEN.html">muse</a> for the Burberry and Lancôme brands. But also, of course, spokesperson for the feminist movement HeForShe.</p>
+      <img class="article__img" src="assets/img/Image-article-Emma-Watson.webp" alt="Image of Emma Watson speaking for HeForShe">
+      <em class="legende">Emma Watson speaking for HeForShe</em>
+
+      <section class="article__body">
+          <h3>Carrier</h3>
+          <p>Her career began at the <b>age of 10</b> and lasted until 2011 to follow all <cite>Harry Potter</cite> as Hermione Granger. During this period, she quickly became a star and took part in many different events such as fashion shows and appeared on the front page of many magazines. She will mark a break in her film career before resuming it in 2017 with <cite>The Circle</cite> and <cite>La Belle et la Bête</cite>. 
+          </p>
+      </section>
+
+        <section class="article__body">
+          <h3>A new figure of feminism</h3>
+          <p>She is heavily involved in <b>humanitary aid</b>, but especially in the <b>defence of women’s rights</b>. She is particularly active in the HeForShe Campaign, where she advocates for gender equality. Appointed <b>UN Women Goodwill Ambassador</b> in 2014, which will allow her to deliver a famous speech at the United Nations in 2016. In January 2018, during the emergence of Time’s Up, she said that what matters to her is <q class="citation"> to make sure it’s a global movement </q>. 
+              <br>
+              <br>
+              She stressed the need for <q class="citation"> women and men from all walks of life </q> ” to be involved, as sexual <a class="link__lexique" href="lexique.html">harassement</a> occurs everywhere. She also makes <b>several donations to associations</b> and funds such as 		Justice and Equality, to which she donates €1 million. More recently, she became a <b>board member</b> of Kering, a French luxury group since June 2020.
+          </p>
+      </section>
+        
+      <section class="article__body">
+          <h3>Focus on the speech</h3>
+          <p>Following her appointment as UN Women Goodwill Ambassador, Emma Watson is offered a golden opportunity. She is invited to give a speech at the <b>United Nations</b> on September 20, 2014 to support the <b>HeForShe campaign project</b>, but also to address the feminist issue in general. She denounced sexual assaults on English university campuses, but she also wanted as many people as possible, women and men, to mobilize for the cause. That is why, while <a class="link__lexique" href="lexique.html">dedicating</a> the feminist cause, which is <q class="citation"> too often associated with the hatred of men </q>, she invites those who can act to do so.
+              <br>
+              <br>
+              In addition, she stressed that <b>no country in the world offered equal income</b> for women and men. It also raised the issue of education, particularly in Africa, where girls were unable to receive a good level of education because of lack of resources and mobilization. In conclusion, she invites all of us to come forward to make our ideas heard within the HeForShe movement. She ends with a simple question: <q class="citation"> If I don’t do it, who will? If I don’t do it now, when? </q>. This powerful sentence is still valid, despite the efforts she and the organisations she supports are making.
+          </p>
+      </section>
+
+      <div class="tweet__legende">
+        <em>If you liked this article, check out our gallery of feminist figures for more information</em>
+      </div>
+      <div class="tweet">
+        <a class="tweet__link" href="galerie.html">
+          <div class="tweet__img">
+            <img class="tweet__img--first" src="assets/img/tweets/Image-Aretha-Franklin-tweet-galerie.webp" alt="Photo of Aretha Franklin, part of the tweet redirecting to the feminist figures gallery">
+            <img class="tweet__img--second" src="assets/img/tweets/Image-Mark-Ruffalo-tweet-galerie.webp" alt="Photo of Mark Ruffalo, part of the tweet redirecting to the feminist figures gallery">
+            <img class="tweet__img--third" src="assets/img/tweets/Image-Simone-Veil-tweet-galerie.webp" alt="Photo of Simone Veil, part of the tweet redirecting to the feminist figures gallery">
+            <img class="tweet__img--fourth" src="assets/img/tweets/Image-Frida-Kahlo-tweet-galerie.webp" alt="Photo of Frida Kahlo, part of the tweet redirecting to the feminist figures gallery">
+          </div>
+            <p class="tweet__title">Gallery of feminist figures</p>
+            <p>Discover more feminists through our gallery</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__link" href="contactEN.html">Contact</a>  
+
+      <p class="footer__text">This website is a project carried out as part of an educational exercise of the <a class="footer__link" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT Belfort-Montbéliard (France).</p>
+
+      <h1 class="footer__title">Mobilizing for women is saving Men</h1>
+    
+      <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
+
+      <p class="footer__text">Matthieu Monturet B2</p>
+    </footer>
+  </body>
+</html>

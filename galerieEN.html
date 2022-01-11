@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Femin'In">
+
+    <title>Femin'In</title>
+    <link rel = "icon" type = "image/png" href = "assets/icons/logo.svg">
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- En-tête -->
+    <header class="header">
+      <div class="header__start">
+        <button class="menu__button"
+        @pointerdown="menuIsOpen = !menuIsOpen"
+        :class="menuIsOpen && 'menu__open'">
+          <span class="menu-button__bar"></span>
+        </button>
+      </div>
+
+      <h1><strong>Femin'In</strong></h1>
+
+      <div class="header__end">
+        <a href="index.html" class="header__logo">
+          <img src="assets/icons/logo.svg" alt="Website logo">
+        </a>
+
+        <nav class="menu" :class="menuIsOpen && 'menu__open'">
+          <div class="header">
+            <div class="header__start">
+              <button class="menu__button">
+                <span class="menu-button__bar"></span>
+              </button>
+            </div>
+
+              <h1><strong>Femin'In</strong></h1>
+
+            <div class="header__end">
+              <a class="header__translate" href="galerie.html">EN</a>
+
+              <a class="header__logo" href="indexEN.html">
+                <img src="assets/icons/logo.svg" alt="Website logo">
+              </a>
+            </div>
+          </div>
+        
+        
+          <ul>
+            <li class="menu__item">
+              <a class="menu__link" href="emma-watsonEN.html">Emma Watson, an icon of the 21st century</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="histoire-du-feminismeEN.html">Feminism, from its origins to nowadays</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="deuxième-sexeEN.html"><em>The Second Sex</em>, a timeless piece</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="galerieEN.html">Gallery of feminist figures</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="contactEN.html">About us / Contact us</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projetsEN.html">Other projects</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="lexiqueEN.html">Lexicon</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.instagram.com/matthieumonturet/">
+                <img class="menu__SN" src="assets/icons/icon_instagram.svg" alt="Icon redirecting to the Instagram account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://twitter.com/MatthieuMontur1">
+                <img class="menu__SN" src="assets/icons/icon_twitter.svg" alt="Icon redirecting to the Twitter account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
+                <img class="menu__SN" src="assets/icons/icon_linkedin.svg" alt="Icon redirecting to the LinkedIn account of Matthieu Monturet">
+              </a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+          </ul>
+            
+          <div class="menu__footer">
+            <a class="menu__link--footer menu__button--footer" href="contact.html">Contact</a>  
+            
+            <p>This site is a project carried out as part of an educational exercise of the <a class="menu__link--footer" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT 	Belfort-Montbéliard in France.</p>
+      
+            <h1 class="menu__title">Mobilizing for women is saving Men</h1>
+            
+            <a class="menu__link--footer" href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
+      
+            <p>Matthieu Monturet B2</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="article">
+        <h2>Feminists icon’s gallery</h2>
+
+        <section class="galerie">
+            <h3>Simone de Beauvoir</h3>
+            <img class="galerie__img" src="assets/img/galerie/Image-Simone-de-Beauvoir-galerie.webp" alt="Photo of Simone de Beauvoir">
+            <br>
+            <em class="legende">
+                Simone de Beauvoir
+                <br>
+                (1908-1986)
+            </em>
+
+            <p>Writer, essayist, philosopher, novelist: this versatile woman is an icon of the 20th century. She is known for her extensive bibliography, but also for her convictions about women’s rights. Born on January 9, 1908 in Paris, she published her first books during the Second World War. But her career really took off when she published <cite>The Second Sex</cite> in 1949. The <a class="link__lexique" href="lexiqueEN.html">essay</a> was an immediate success, scandalous in several institutions such as the Vatican to the point of putting it on the sidelines. <em>For more informations about <cite>The Second Sex</cite>, see the article "<a class="link" href="deuxième-sexeEN.html"><cite>The Second Sex</cite>, a timeless piece</a>"</em>. In 1954, she was awarded the Goncourt Prize after the publication of her novel <cite>The Mandarins</cite>, becoming one of the most widely read authors in the world. She died on 14 April 1986 at the age of 78, leaving behind a total of 24 books. Added to this are posthumous works written by his heir Sylvie Le Bon de Beauvoir. The most recent one dates from 2020 (<cite>The Inseparables</cite>).</p>
+        </section>
+
+        <section class="galerie">
+            <h3>Frida Kahlo</h3>
+            <img src="assets/img/galerie/Autoportrait-Frida-Kahlo-galerie.webp" alt="Image of a self-portrait of Frida Kahlo">
+            <em class="legende">Self-portrait of Frida Kahlo (1948)</em>
+
+            <p>Mexican artist Frida Kahlo was born on July 6, 1907 in Mexico City. She has produced more than 140 paintings in her life, and has become a symbol of Mexico abroad in her lifetime. Since her childhood, she has been protesting against gender inequalities, not only in Mexican society but also in the countries she visits to present her exhibitions (the United States, France...). She was also an advocate for women’s <a class="link__lexique" href="lexiqueEN.html">emancipation</a> and was keen to challenge the <a class="link__lexique" href="lexiqueEN.html">stereotypes</a> of the time. She is the example of the strong, independent woman who fights against the obstacles of life (and society).</p>
+        </section>
+        
+        <section class="galerie">
+            <h3>Simone Veil</h3>
+            <img src="assets/img/galerie/Photo-Simone-Veil-galerie.webp" alt="Photo of Simone Veil">
+            <br>
+            <em class="legende">
+                Simone Veil
+                <br>
+                (1927-2017)
+            </em>
+
+            <p>Simone Veil (born Simone Jacob on July 13, 1927) is a French magistrate and stateswoman. An ardent defender of women’s rights, she is known for the “Veil Law” and the speech that preceded the passing of the law. The “Veil Law” allows women to have access to <a class="link__lexique" href="lexiqueEN.html">abortion</a> legally. Simone Veil has held many high-level positions. For example, she was appointed minister of several institutions under different governments and is also a symbol of the fight against anti-Semitism. She died on June 30, 2017 in Paris, and was buried in the Pantheon in 2018 on Emmanuel Macron’s demand.</p>
+        </section>
+        
+        <section class="galerie">
+            <h3>Aretha Franklin</h3>
+            <img src="assets/img/galerie/Photo-Aretha-Franklin-galerie.webp" alt="Photo of Aretha Franklin">
+            <br>
+            <em class="legende">
+                Aretha Franklin
+                <br>
+                (1942-2018)
+            </em>
+
+            <p>Aretha Franklin (born March 25, 1942 in Memphis, Tennessee, USA) is a songwriter and self-songwriter nicknamed “The Queen of Soul. ” She is considered by many to be the most influential African-American singer of the 20th century. Having recorded a total of 42 albums in her career, she has inspired many artists, both from her time and contemporary ones. She is also the most ranked singer in American chart history. Most of its most famous titles are designations to respect for women and their rights. She even parodies an Otis Redding single <cite>Respect</cite>, to give it a new meaning. Instead of degrading women, the song claims the right of women to be valued as much as men. Several other titles support this idea (<cite>Think</cite> for example, remastered and featured in the film <cite>The Blues Brothers</cite> later). His death on 13 August 2018 triggered a shower of tributes to him from people of all walks of life.</p>
+        </section>
+        
+        <section class="galerie">
+            <h3>Malala Yousafzai</h3>
+            <img src="assets/img/galerie/Photo-Malala-Yousafzai-galerie.webp" alt="Photo of Malala Yousafzai">
+            <br>
+            <em class="legende">
+                Malala Yousafzai
+                <br>
+                (1997-.)
+            </em>
+
+            <p>Malala Yousafzai (born 12 July 1997) is a Pakistani women’s rights activist. She became known in 2009, when she was only 11 years old. Following the publication of a blog for the BBC called <cite>Diary of a Pakistani Schoolgirl</cite>. She describes her perspective on education and her life under Taliban rule. It also opposes the ruling power that was trying to suppress schools in Pakistan. In 2014, at the age of 17, she won the Nobel Peace Prize with Indian Kailash Satyarthi, becoming the youngest Nobel Prize winner in history.</p>
+        </section>
+        
+        <section class="galerie">
+            <h3>Mark Ruffalo</h3>
+            <img src="assets/img/galerie/Photo-Mark-Ruffalo-galerie.webp" alt="Photo of Mark Ruffalo">
+            <br>
+            <em class="legende">
+                Mark Ruffalo
+                <br>
+                (1967-.)
+            </em>
+
+            <p>An American actor known for playing the Hulk on the big screen, Mark Ruffalo is one of Hollywood’s most committed actors. He is also involved in environmental protection alongside Leonardo DiCaprio and is mobilizing to defend women’s rights. In 2013, he signed an open letter defending the right to <a class="link__lexique" href="lexiqueEN.html">abortion</a>:
+                <br>
+                <br>
+                <q class="citation"><b> I’m a man, I could say it’s absolutely none of my business. Except I have two daughters and my mother was forced to have an illegal abortion in a state where abortion was forbidden when she was young. It cost him $600. </b></q>
+                <br>
+                <br>
+                On January 21, 2017, Mark Ruffalo was at the “Women’s March” in Washington, a political demonstration organised following the election of Donald Trump on November 8, 2016. One of its aims was to promote gender equality.
+            </p>
+        </section>
+
+        <div class="tweet__legende">
+          <em>Interested in this gallery? Discover our article on the history of feminism and its key figures</em>
+        </div>
+        <div class="tweet">
+          <a class="tweet__link" href="histoire-du-feminismeEN.html">
+              <img src="assets/img/tweets/Image-tweet-histoire-du-féminisme.webp" alt="Tweet linking to the article Feminism in France, from its origins to nowadays">
+              <p class="tweet__title">Feminism in France, from its origins to nowadays</p>
+              <p>Click to learn more!</p>
+          </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__link" href="contactEN.html">Contact</a>  
+
+      <p class="footer__text">This website is a project carried out as part of an educational exercise of the <a class="footer__link" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT Belfort-Montbéliard (France).</p>
+
+      <h1 class="footer__title">Mobilizing for women is saving Men</h1>
+    
+      <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
+
+      <p class="footer__text">Matthieu Monturet B2</p>
+    </footer>
+  </body>
+</html>

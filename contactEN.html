@@ -43,9 +43,9 @@
               <h1><strong>Femin'In</strong></h1>
 
             <div class="header__end">
-              <a class="header__translate" href="index.html">EN</a>
+              <a class="header__translate" href="contact.html">EN</a>
 
-              <a class="header__logo" href="index.html">
+              <a class="header__logo" href="indexEN.html">
                 <img src="assets/icons/logo.svg" alt="Website logo">
               </a>
             </div>
@@ -117,71 +117,75 @@
       </div>
     </header>
 
-    <main>
+    <main class="article">
+      <div class="article__text">
+        <h2>About us</h2>
+        <section>
+            <h3>Who am I?</h3>
 
-      <img class="home__page--img" src="assets/img/Image-page-d_accueil.webp" alt="Image de la page d'accueil">
+            <p>My name is Matthieu Monturet, I am a first-year student of MMI (Multimedia and Internet Business) in Montbéliard.</p>
+        </section>
+        
+        <section>
+            <h3>Context of the creation of the site</h3>
 
-      <img class="motif motif1" src="assets/icons/line.svg" alt="Motif de la page d'accueil">
-      
-      <div class="video">
-        <video src="assets/video/video_test.mp4" controls preload="auto"></video>
-        <p class="video__desc">This video consists of a micro-trottoir on the theme of feminism, which was produced as part of an educational exercise for the BUT MMI training course in Montbéliard.</p>
+            <p>This website was created in response to a request for a biannual project on the theme of feminism. I chose Emma Watson as a figure of feminism because she is a person known to many people, both for her acting career and for her actions to raise awareness of the feminist movements she supports. As a result, it will attract more people because it will inspire a sense of knowledge and curiosity about it. On the other hand, this project makes it possible to address a serious subject while at the same time raising awareness among an audience that is not necessarily accustomed to this kind of discourse. The defence of women’s rights and the pursuit of gender equality is a topical issue, but it is nonetheless important</p>
+        </section>
+
+        <h2>Imprint obligations</h2>
+
+        <p>This site is a project carried out as part of an educational exercise of the <a class="link__externe" href="http://mmimontbeliard.com/">Montbéliard MMI</a> of IUT Belfort-Montbéliard.</p>
+
+        <h2>Contact us</h2>
+
+        <p>Feel free to return using this form if you have a suggestion, correction or any other comment to improve the site to offer you a better quality of service!
+            <br>
+            <br>
+            <em>The fields marked with a star «<span class="required">*</span>» must be filled in to be able to contact you again</em>.
+        </p>
       </div>
+        
+        <form action="#">
+            <div>
+                <label for="first_name" class="contact__title">First name / Pseudonym<span class="required">*</span></label>
+                <br>
+                <input name="first_name" id="first_name" type="text" class="contact" required>
+            </div>
+                
+            <div>
+                <label for="last_name" class="contact__title">Last name (not required)</label>
+                <br>
+                <input name="last_name" id="last_name" type="text" class="contact">
+            </div>
 
-      <img class="motif motif2" src="assets/icons/line.svg" alt="Motif de la page d'accueil">
-
-      <p class="intro">
-        Hello and welcome to Femin’In!
-        <br>
-        <br>
-        Feel free to visit the projects of my classmates, available in the “Other Projects” section!
-        <br>
-        <br>
-        Any comment to make on the site? Go to the “About us / Contact us” section. You will find a contact form to get your feedback and impressions!
-        <br>
-        <br>
-        Have a nice visit!
-      </p>
-
-      <img class="motif motif3" src="assets/icons/line.svg" alt="Home page design">
-
-      <div class="tweet">
-        <a class="tweet__link" href="emma-watsonEN.html">
-          <img src="assets/img/tweets/Image-tweet-Emma-Watson.webp" alt="Tweet linking to the article Emma Watson, an icon of the 21st century">        
-          <p class="tweet__title">Emma Watson, an icon of the 21st century</p>
-          <p>Click to learn more!</p>          
-        </a>
-      </div>
-
-      <div class="tweet">
-        <a class="tweet__link" href="histoire-du-feminismeEN.html">
-          <img src="assets/img/tweets/Image-tweet-histoire-du-féminisme.webp" alt="Tweet linking to the article Feminism in France, from its origins to nowadays">
-          <p class="tweet__title">Feminism, from its origins to nowadays</p>
-          <p>Click to learn more!</p>
-        </a>
-      </div>
-
-      <div class="tweet">
-        <a class="tweet__link" href="deuxième-sexeEN.html">
-          <img src="assets/img/tweets/Image-tweet-Deuxième-sexe.webp" alt="Tweet linking to the article The Second Sex, a timeless piece">
-          <p class="tweet__title"><em>The Second Sex</em>, a timeless piece</p>
-          <p>Click to learn more!</p>
-        </a>
-      </div>
-
-      <img class="motif motif4" src="assets/icons/line.svg" alt="Home page design">
+            <div>
+                <label for="email" class="contact__title">Mail<span class="required">*</span></label>
+                <br>
+                <input type="email" id="email" name="email" class="contact" placeholder="ex : myname@example.com" required>
+            </div>
+                
+            <div>
+                <label for="message" class="contact__title">Comment<span class="required">*</span></label>
+                <br>
+                <textarea name="message" id="message" rows="10" class="contact" required></textarea>
+            </div>
+            
+            <button>
+                <img class="contact__button" src="assets/icons/send_button.svg" alt="Send button">
+            </button>
+        </form>
     </main>
-    
+
     <footer class="footer">
-        <a class="footer__link" href="contactEN.html">Contact</a>  
+      <a class="footer__link" href="contactEN.html">Contact</a>  
 
-        <p class="footer__text">This website is a project carried out as part of an educational exercise of the <a class="footer__link" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT Belfort-Montbéliard (France).</p>
+      <p class="footer__text">This website is a project carried out as part of an educational exercise of the <a class="footer__link" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT Belfort-Montbéliard (France).</p>
 
-        <h1 class="footer__title">Mobilizing for women is saving Men</h1>
-      
-        <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
+      <h1 class="footer__title">Mobilizing for women is saving Men</h1>
+    
+      <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
 
-        <p class="footer__text">Matthieu Monturet B2</p>
+      <p class="footer__text">Matthieu Monturet B2</p>
     </footer>
   </body>
 </html>

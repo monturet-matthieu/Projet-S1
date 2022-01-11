@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Femin'In">
+
+    <title>Femin'In</title>
+    <link rel = "icon" type = "image/png" href = "assets/icons/logo.svg">
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- En-tête -->
+    <header class="header">
+      <div class="header__start">
+        <button class="menu__button"
+        @pointerdown="menuIsOpen = !menuIsOpen"
+        :class="menuIsOpen && 'menu__open'">
+          <span class="menu-button__bar"></span>
+        </button>
+      </div>
+
+      <h1><strong>Femin'In</strong></h1>
+
+      <div class="header__end">
+        <a href="index.html" class="header__logo">
+          <img src="assets/icons/logo.svg" alt="Website logo">
+        </a>
+
+        <nav class="menu" :class="menuIsOpen && 'menu__open'">
+          <div class="header">
+            <div class="header__start">
+              <button class="menu__button">
+                <span class="menu-button__bar"></span>
+              </button>
+            </div>
+
+              <h1><strong>Femin'In</strong></h1>
+
+            <div class="header__end">
+              <a class="header__translate" href="histoire-du-feminisme.html">EN</a>
+
+              <a class="header__logo" href="indexEN.html">
+                <img src="assets/icons/logo.svg" alt="Website logo">
+              </a>
+            </div>
+          </div>
+        
+        
+          <ul>
+            <li class="menu__item">
+              <a class="menu__link" href="emma-watsonEN.html">Emma Watson, an icon of the 21st century</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="histoire-du-feminismeEN.html">Feminism, from its origins to nowadays</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="deuxième-sexeEN.html"><em>The Second Sex</em>, a timeless piece</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="galerieEN.html">Gallery of feminist figures</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="contactEN.html">About us / Contact us</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projetsEN.html">Other projects</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="lexiqueEN.html">Lexicon</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.instagram.com/matthieumonturet/">
+                <img class="menu__SN" src="assets/icons/icon_instagram.svg" alt="Icon redirecting to the Instagram account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://twitter.com/MatthieuMontur1">
+                <img class="menu__SN" src="assets/icons/icon_twitter.svg" alt="Icon redirecting to the Twitter account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
+                <img class="menu__SN" src="assets/icons/icon_linkedin.svg" alt="Icon redirecting to the LinkedIn account of Matthieu Monturet">
+              </a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+          </ul>
+            
+          <div class="menu__footer">
+            <a class="menu__link--footer menu__button--footer" href="contact.html">Contact</a>  
+            
+            <p>This site is a project carried out as part of an educational exercise of the <a class="menu__link--footer" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT 	Belfort-Montbéliard in France.</p>
+      
+            <h1 class="menu__title">Mobilizing for women is saving Men</h1>
+            
+            <a class="menu__link--footer" href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
+      
+            <p>Matthieu Monturet B2</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="article">
+      <div class="hdf">
+        <h2>Feminism in France from its origins to nowadays</h2>
+        <p class="chapo">Here is a list of key moments in the history of feminism in France:</p>
+        <ul class="list">
+          <li>Born Marie Gouze, <b>Olympe de Gouges</b> is known as one of the precursors of French feminism. She wrote numerous <a class="link__lexique" href="lexiqueEN.html">essays</a> on <b>women's rights</b> and the<b>abolition of slavery</b>. In 1791 she published the Declaration of the Rights of Women and the Citizen. It is a work based on the model of the 1789 Declaration of the Rights of Man and the Citizen. The aim of the latter is to invoke the fact that <b>women are equal to men</b> ;</li>
+          <br>
+          <li>Marie Curie, a Polish-French physicist and chemist, became the first woman to be awarded the <b>Nobel Prize in Physics</b> in 1903. The prize was awarded to her following her work on radioactivity with her husband Pierre Curie. She was awarded the <b>Nobel Prize in Chemistry</b> in 1911 following the discovery of two new elements: radium and polonium. She is still the only woman to have received two Nobel Prizes ;</li>
+          <img class="list__img" src="assets/img/hdf/Image-Marie-Curie-article-histoire-du-féminisme.webp" alt="Photography of Marie Curie"><em class="legende">Portrait of Marie Curie</em>
+          <li>On 21 April 1944, women were granted the <b>right to vote</b>, which they could use in municipal elections on 29 April 1945 ;</li>
+          <br>
+          <li>The Neuwirth law was implemented on 28 December 1967. It <b>legalised <a class="link__lexique" href="lexiqueEN.html">contraception</a> for people over 18</b>. However, it cannot be reimbursed by the Social Security and its advertising is prohibited ;</li>
+          <br>
+          <li>On 26 August 1970, ten women honoured "the wife of the unknown soldier", marking the birth of the <b>Women's Liberation Movement</b> (MLF). It intervenes for the protection of women, particularly in the fight against domestic violence and the right to abortion. It was through this demonstration that the "<b>Women's Hymn</b>", was born, which became the emblem of French-speaking feminist struggles ;</li>
+          <img class="list__img list__img--mlf" src="assets/img/hdf/Image-MLF-article-histoire-du-féminisme.webp" alt="Photo taken during an MLF demonstration at the laying of a wreath on the tomb of the Unknown Soldier"><em class="legende">MLF demonstration at the laying of flowers on the tomb of the Unknown Soldier</em>
+          <li><b>Legalisation of <a class="link__lexique" href="lexiqueEN.html">abortion</a> on 17 January 1975</b>. This law is commonly referred to as the "Veil law" following Simone Veil's speech to the National Assembly on 26 November 1974 ;</li>
+          <br>
+          <li>In 1983, the <b>, the law on professional equality</b>, was implemented by Yvette Roudy (Minister for Women's Rights from 1981 to 1986). Voted on 3 November 1982, it defines <b>parity rate in terms of hiring and remuneration</b> for the most part. This law is applicable in companies with more than 50 employees ;</li>
+          <br>
+          <li>In 1995, the <b>Observatory for Parity between Women and Men</b> (OPFH) was inaugurated. It is intended to provide expertise 	on public policies to promote fairer equality between women and men at the political, economic and social levels. The <b>High Council for Equality between Women and Men</b> (HCE) replace it in 2013 ;</li>
+          <br>
+          <li>The law n°2006-340 pronouncing the obligation of <b>equal pay between women and men</b> was passed on 23 March 2006. It must, within five years, <b>eliminate the pay gap between women and men</b>. It should also strengthen maternity leave rights and facilitate access to apprentice ships for women ;</li>
+          <br>
+          <li>The setting up of<b>3919</b>, a national telephone number, allows victims and witnesses of domestic violence from 14 March 2007 to talk about the acts they have suffered or witnessed ;</li>
+          <br>
+          <li>In 2008, the feminist movement "<b>Femen</b>" was born in Ukraine thanks to Anna Hutsol among others. This movement aims to defend women's rights by carrying out commando actions, often by demonstrating bare-chested in the street. The movement spread rapidly in Europe and reached France a few weeks later. Inna Shevchenko is the current leader in France ;</li>
+          <img class="list__img" src="assets/img/hdf/Image-Femen-article-histoire-du-féminisme.webp" alt="Photo of Femen France protesters"><em class="legende">Photo de manifestantes du groupe Femen France</em>
+          <li>Promulgation of the law n°2010-769 on violence against women, within a couple and the impact of such violence on 	children on 9 July 2010. It aims to <b>strengthen the prevention and repression of such violence</b>. It particularly establishes protection orders for victims and offences of moral <a class="link__lexique" href="lexiqueEN.html">harassement</a> within couples ;</li>
+          <br>
+          <li>In March 2013, a decree established the <b>full reimbursement of <a class="link__lexique" href="lexiqueEN.html">abortion</a></b> and medical<a class="link__lexique" href="lexiqueEN.html">contraceptives</a> for minors over 15 years old ;</li>
+          <br>
+          <li>On 20 Spetember 2014, <b>Emma Watson's speech</b> rings out at the United Nations headquarters as part of the "HeForShe" campaign. She stresses the <b>need for everyone to be involved</b> in achieving gender equality ;</li>
+          <img class="list__img" src="assets/img/hdf/Photo-Emma-Watson-article-histoire-du-féminisme.webp" alt="Photo of Emma Watson after her speech at the United Nations in 2014"><em class="legende">Emma Watson after her speech at the United Nations in 2014</em>
+          <li>In October 2017, the revelations about Hollywood director Harvey Weinstein set women's voices free. As a result, the hashtag <b>#BalanceTonPorc</b>. It comes from journalist Sandra Muller and encourages the<b>reporting of <a class="link__lexique" href="lexiqueEN.html">sexual abuse</a></b> in the workplace. She encourages women to testify on social networks to break the taboos on this subject. Testimonies from victims of sexual assault and harassment are pouring in (more than 50,000 messages in one weekend) ;</li>
+          <br>
+          <li>In response to the #BalanceTonPorc movement, actress Alyssa Milano launched the hashtag <b>#MeToo</b>. a few days later. Its aim is to encourage women who are victims of the same abuse to come forward. This impacted all social networks, especially Twitter (where the movement started) and Facebook ;</li>
+          <img class="list__img" src="assets/img/hdf/Image-MeToo-article-histoire-du-féminisme.webp" alt="Image of a #MeToo Twitter protest"><em class="legende">Demonstration following the #MeToo launched on Twitter</em>
+          <li>On 15 March 2020, the <a class="link__lexique" href="lexiqueEN.html">contraceptive pill</a> will be available to all women <b>directly from pharmacies</b>. All that is needed is an old prescription and no need to go to a doctor to get one. In addition, emergency<a class="link__lexique" href="lexiqueEN.html">contraception</a> is available without a prescription, also in pharmacies  ;</li>
+          <br>
+          <li><b><a class="link__lexique" href="lexiqueEN.html">Contraception</a></b> will be <b>free for minors under the age of 1</b>5 on 27 August 2020. The costs of consultations and examinations are therefore fully covered by Social Security, as for young girls aged 15 to 17 ;</li>
+          <br>
+          <li>On 16 January 2021, the #MeToo movement took another turn following the Duhamel case. The political scientist was alleged to have committed incest on the brother of Camille Kouchner, author of a book denouncing these facts. The <b>#MeTooInceste</b> is launched mainly on Twitter and Instagram, and highlights thousands of testimonies ;</li>
+          <br>
+          <li>More recently, a law aiming at making<b>menstrual protection free for students</b> was passed in February 2021. Since the start of the 2021 school year, they are available in CROUS and university health services.</li>
+        </ul>
+
+        <p class="chapo">To illustrate this list, here is a summary timeline:</p>
+        <img class="frise" src="assets/img/hdf/timeline.png" alt="Timeline">
+        <p class="frise__text"><span class="date">1791 :</span> Publication of the Declaration of the Rights of Women and Citizens of Olympus de Gouges.
+          <br>
+          <br>
+          <br>
+          <span class="date">1903 :</span> Marie Curie becomes the first woman to receive a Nobel Prize in Physics. She was awarded the Nobel Prize in Chemistry in 1911.
+          <br>
+          <br>
+          <br>
+          <span class="date">April 21, 1944 :</span> The right to vote is granted to women.
+          <br>
+          <br>
+          <br>
+          <br>
+          <span class="date">December 28, 1967 :</span> The Neuwirth Law is implemented, legalizing contraception for adult women.
+          <br>
+          <br>
+          <br>
+          <span class="date">August 26, 1970 :</span> Birth of the MLF following the commemoration of the “wife of the unknown soldier”.
+          <br>
+          <br>
+          <br>
+          <br>
+          <span class="date">January 7, 1975 :</span> Legalization of abortion, thanks in particular to Simone Veil.
+          <br>
+          <br>
+          <br>
+          <br>
+          <span class="date">1983 :</span> Application of the Employment Equality Act to define the rate of parity in employment and pay.
+          <br>
+          <br>
+          <br>
+          <span class="date">1995 :</span> Inauguration of the OPFH.
+          <br>
+          <br>
+          <br>
+          <br>
+          <span class="date">March 23, 2006 :</span> The law mandating equal pay for women and men is passed.
+          <br>
+          <br>
+          <br>
+          <span class="date">March 14, 2007 :</span> Establishment of 3919, a national hotline for victims and witnesses of domestic violence.
+          <br>
+          <br>
+          <br>
+          <span class="date">2008 :</span> Birth of the feminist movement “Femen” in Ukraine. The movement spreads rapidly in Europe and arrives in France within a few weeks.
+          <br>
+          <br>
+          <span class="date">July 9, 2010 :</span> Promulgation of the Law to Strengthen the Prevention and Punishment of Violence against Women, Domestic Violence and its Impact on Children.
+          <br>
+          <br>
+          <span class="date">Mar. 2013 :</span> Establishment of full reimbursement of abortion and contraceptives for girls aged 15 to 17.
+          <br>
+          <br>
+          <span class="date">September 20, 2014 :</span> Emma Watson’s speech at the United Nations for the HeForShe Campaign.
+          <br>
+          <br>
+          <span class="date">Oct. 2017 :</span> #BalanceTonPorc is launched on Twitter following the revelations about the Weinstein affair. A few days later, the #MeToo appeared and triggered a huge wave of testimonies from victims of sexual abuse.
+          <br>
+          <span class="date">March 15, 2020 :</span> The contraceptive pill becomes available to all women directly in pharmacies, subject to a previous prescription. Emergency contraception, on the other hand, is available without a prescription.
+          <br>
+          <span class="date">August 27, 2020 :</span> Contraception becomes free for all underage girls. The costs of consultations and examinations are fully covered by the social security system.
+          <br>
+          <span class="date">January 16, 2021 :</span> #MeToo is hijacked as #MeTooIncest following the Duhamel affair. Thousands of victims' testimonies are highlighted once again.
+          <br>
+          <span class="date">Feb. 2021 :</span> The law to make periodic protections free for female students is passed. It is applied from the start of the school year 2021.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__link" href="contactEN.html">Contact</a>  
+
+      <p class="footer__text">This website is a project carried out as part of an educational exercise of the <a class="footer__link" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT Belfort-Montbéliard (France).</p>
+
+      <h1 class="footer__title">Mobilizing for women is saving Men</h1>
+    
+      <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
+
+      <p class="footer__text">Matthieu Monturet B2</p>
+    </footer>
+  </body>
+</html>

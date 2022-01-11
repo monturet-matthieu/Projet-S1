@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Femin'In">
+
+    <title>Femin'In</title>
+    <link rel = "icon" type = "image/png" href = "assets/icons/logo.svg">
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- En-tête -->
+    <header class="header">
+      <div class="header__start">
+        <button class="menu__button"
+        @pointerdown="menuIsOpen = !menuIsOpen"
+        :class="menuIsOpen && 'menu__open'">
+          <span class="menu-button__bar"></span>
+        </button>
+      </div>
+
+      <h1><strong>Femin'In</strong></h1>
+
+      <div class="header__end">
+        <a href="index.html" class="header__logo">
+          <img src="assets/icons/logo.svg" alt="Website logo">
+        </a>
+
+        <nav class="menu" :class="menuIsOpen && 'menu__open'">
+          <div class="header">
+            <div class="header__start">
+              <button class="menu__button">
+                <span class="menu-button__bar"></span>
+              </button>
+            </div>
+
+              <h1><strong>Femin'In</strong></h1>
+
+            <div class="header__end">
+              <a class="header__translate" href="deuxième-sexe.html">EN</a>
+
+              <a class="header__logo" href="indexEN.html">
+                <img src="assets/icons/logo.svg" alt="Website logo">
+              </a>
+            </div>
+          </div>
+        
+        
+          <ul>
+            <li class="menu__item">
+              <a class="menu__link" href="emma-watsonEN.html">Emma Watson, an icon of the 21st century</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="histoire-du-feminismeEN.html">Feminism, from its origins to nowadays</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="deuxième-sexeEN.html"><em>The Second Sex</em>, a timeless piece</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="galerieEN.html">Gallery of feminist figures</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="contactEN.html">About us / Contact us</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projetsEN.html">Other projects</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="lexiqueEN.html">Lexicon</a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+            
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.instagram.com/matthieumonturet/">
+                <img class="menu__SN" src="assets/icons/icon_instagram.svg" alt="Icon redirecting to the Instagram account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://twitter.com/MatthieuMontur1">
+                <img class="menu__SN" src="assets/icons/icon_twitter.svg" alt="Icon redirecting to the Twitter account of Matthieu Monturet">
+              </a>
+              <a class="menu__link" href="https://www.linkedin.com/in/matthieu-monturet-170071224/">
+                <img class="menu__SN" src="assets/icons/icon_linkedin.svg" alt="Icon redirecting to the LinkedIn account of Matthieu Monturet">
+              </a>
+            <img class="menu__img" src="assets/icons/menu_line.svg" alt="Line separating the titles of the menu tabs">
+            </li>
+          </ul>
+            
+          <div class="menu__footer">
+            <a class="menu__link--footer menu__button--footer" href="contact.html">Contact</a>  
+            
+            <p>This site is a project carried out as part of an educational exercise of the <a class="menu__link--footer" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT 	Belfort-Montbéliard in France.</p>
+      
+            <h1 class="menu__title">Mobilizing for women is saving Men</h1>
+            
+            <a class="menu__link--footer" href="mailto:monturetmatthieu@gmail.com">mailto : monturetmatthieu@gmail.com</a>
+      
+            <p>Matthieu Monturet B2</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article">
+      <h2><cite>The Second Sex</cite>, a timeless piece</h2>
+
+      <section class="article__body">
+        <p class="chapo"><cite>The Second Sex</cite> is an essay by Simone de Beauvoir published in 1949. Writer, essayist, philosopher, novelist: this French woman is an icon of the 20th century. She is considered a <b>major theorist <a class="link__lexique" href="lexiqueEN.html">feminist</a></b>.
+            <br>
+            <em>For more information on Simone de Beauvoir, see the <a class="link" href="galerieEN.html">gallery of feminist figures</a></em>. 
+            <br>
+            The origin of the famous quote <q class="citation"> We aren’t born as a woman, we become one </q> (Volume II, page 13), <cite>The Second Sex</cite> is written as an encyclopaedia. The <a class="link__lexique" href="lexiqueEN.html">essay</a> does have an autobiographical <a class="link__lexique" href="lexiqueEN.html">connotation</a>, as the author draws on her own experiences. 
+        </p>
+        
+        <h3>A reference for modern feminism</h3>
+
+        <h4>Volume One</h4>
+
+        <p>The<a class="link__lexique" href="lexiqueEN.html">essay</a> was violently criticised on publication, but this did not prevent it from quickly becoming a great success. <cite>The Second Sex</cite> is divided into two volumes. The first, <cite>Facts and Myths</cite> deals with the causes of the internalization of women, the history of the relationship between men and women and the feminine myth in the broadest sense. In it, Simone de Beauvoir criticises several authors for their works based on the belittlement of women. In these works, <b>the woman only serves to highlight the 'qualities' of the hero or the man in the broad sense</b>.</p>
+
+        <h4>Volume Two</h4>
+
+        <p>The second volume of <cite>The Second Sex</cite> deals with the lives of women in general at the time, based on her personal experiences. The title of the volume is proof of this: <cite>Lived Experience</cite>. It is divided into four parts. The first part deals with <b><a class="link__lexique" href="lexiqueEN.html">stereotypes</a> in a girl's childhood</b>, such as her different upbringing from that of boys. The second part is about the adult woman, again based on <a class="link__lexique" href="lexiqueEN.html">stereotypes</a> instilled by society. The third part paints the <b>portraits of several archetypal women</b> who are well established in the society of the time. She also criticises these women, who <q class="citation"> flee their freedom by adopting these behaviours </q>. The fourth and last part is <b>a situation of an independent woman </b> of the time. She only <a class="link__lexique" href="lexiqueEN.html">emancipate</a> through work, as civil liberties are not enough to <a class="link__lexique" href="lexiqueEN.html">emancipate</a>. She has no moral freedoms either, given her upbringing but also the view of all those who have received this upbringing.</p>
+
+        <h4>In summary</h4>
+
+        <p> To conclude her <a class="link__lexique" href="lexiqueEN.html">essay</a>, Beauvoir makes a statement about the situation. She states:
+            <br>
+            <q class="citation"> Men and women are not satisfied with each other, because of the <a class="link__lexique" href="lexiqueEN.html">opression</a> exercised by the former over the latter. </q>
+            <br>
+            She accuses men of being arrogant with <a class="link__lexique" href="lexiqueEN.html">emancipated</a> women or women who want to become emancipated, but also women who are too passive or too ambiguous. Women who want to be independent, but who also want to keep old prerogatives, cannot consider themselves autonomous, she says. She adds that as long as women are complicit in their own destiny, they cannot be considered as similar to men. This is why, in her opinion, <b>we must invest and evolve collectively</b> towards a man-woman relationship where the man no longer mystifies the woman and where the woman gives herself the means to develop her status in society.
+        </p>
+      </section>
+
+      <img class="article__img" src="assets/img/tweets/Image-tweet-Deuxième-sexe.webp" alt="Image of the cover of the book The Second Sex"><em class="legende">Cover of the book <cite>The Second Sex</cite></em>
+        
+      <section>
+        <h3>A source of inspiration and motivation</h3>
+
+        <p>Today, <a class="link__lexique" href="lexiqueEN.html">feminism</a> has a more prominent place in people's minds, both positively and negatively. The various movements that have emerged over the years have not and will not stop working to achieve their demands. This state of mind was, for some of them, transmitted by Simone de Beauvoir through <cite>The Second Sex</cite>. Emma Watson is one of them, because she is aware that <b>without the mobilisation of the whole population</b> the cause will not have any real meaning or progress. She therefore seeks to bring together people from different social, professional, cultural and educational backgrounds to campaign for gender equality. Even though there has been significant progress over the last decade, it is still not enough for her. Her actions, such as donations or speeches (<em>see <a class="link" href="emma-watsonEN.html">article on Emma Watson</a></em>), are becoming more frequent to <b>keep pressure on organisations</b> that can influence the evolution of rights related to gender equality.</p>
+      </section>
+      
+      <div class="tweet__legende">
+        <em>If you enjoyed this article, you are sure to like our article about Emma Watson</em>
+      </div>
+      <div class="tweet">
+        <a class="tweet__link" href="emma-watsonEN.html">
+          <img src="assets/img/tweets/Image-tweet-Emma-Watson.webp" alt="Tweet redirecting to article Emma Watson, an icon of the 21st century">
+          <p class="tweet__title">Emma Watson, an icon of the 21st century</p>
+          <p>Click to learn more!</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__link" href="contactEN.html">Contact</a>  
+
+      <p class="footer__text">This website is a project carried out as part of an educational exercise of the <a class="footer__link" href="http://mmimontbeliard.com">Montbéliard MMI</a> department of IUT Belfort-Montbéliard (France).</p>
+
+      <h1 class="footer__title">Mobilizing for women is saving Men</h1>
+    
+      <a class="footer__link" href="mailto:monturetmatthieu@gmail.com">mailto : <br> monturetmatthieu@gmail.com</a>
+
+      <p class="footer__text">Matthieu Monturet B2</p>
+    </footer>
+  </body>
+</html>

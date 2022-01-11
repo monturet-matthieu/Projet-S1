@@ -120,6 +120,16 @@
     line-height: 0.9;
 }
 
+.lexique__motsEN {
+    position: absolute;
+    color: var(--violet-lexique-frise);
+    font-size: var(--title-chapo);
+    text-align: right;
+    margin-right: 250px;
+    margin-top: 20px;
+    line-height: 0.9;
+}
+
 .lexique__def {
     position: relative;
     margin-top: 30px;
